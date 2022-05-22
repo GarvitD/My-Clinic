@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Clinic</string>
+    <string name="apiUrl">https://bigohealthdevtest.herokuapp.com/</string>
+</resources>

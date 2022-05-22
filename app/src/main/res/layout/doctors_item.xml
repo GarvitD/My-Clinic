@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/doctorPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:text="Price"
+            android:textColor="@color/darkPurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doctorPrice"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/doctorAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:text="doctor Age"
+                android:textColor="@color/darkPurple"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doctor_profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_color="@color/darkPurple" />
+
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/doctorAge"
+                android:layout_toEndOf="@+id/doctor_profile"
+                android:layout_toRightOf="@+id/doctor_profile"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_vertical"
+                android:text="doctorName"
+                android:textColor="@color/darkPurple"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_distance_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="@color/darkPurple"
+                tools:ignore="RelativeOverlap" />
+
+
+            <TextView
+                android:id="@+id/doctor_speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_name"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/doctor_profile"
+                android:layout_toRightOf="@+id/doctor_profile"
+                android:text="doctorSpeciality"
+                android:textColor="@color/darkPurple"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/doctor_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_speciality"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/doctor_profile"
+                android:layout_toRightOf="@+id/doctor_profile"
+                android:text="doctorAddress"
+                android:textColor="@color/darkPurple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bookBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_address"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_background"
+                android:text="Book!"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+

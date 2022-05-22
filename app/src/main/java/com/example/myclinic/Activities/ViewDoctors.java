@@ -73,6 +73,7 @@ public class ViewDoctors extends AppCompatActivity implements DoctorsAdapter.Doc
                 });
 
         binding.doctorsList.setAdapter(doctorsAdapter);
+        binding.progressBar.setVisibility(View.GONE);
     }
 
     @Override
